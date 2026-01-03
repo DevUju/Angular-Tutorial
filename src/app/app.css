@@ -1,0 +1,46 @@
+.counter-app {
+    text-align: center;
+}
+
+.count {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 10%;
+    background-color: grey;
+    color: white;
+}
+
+.btn {
+    border: 2px solid rgb(87, 84, 84);
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 20px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: none;
+}
+
+.blue {
+    background-color: #3498db;
+    color: white;
+}
+
+.black {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.green {
+    background-color: #2ecc71;
+    color: white;
+}

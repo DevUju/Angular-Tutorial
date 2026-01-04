@@ -1,4 +1,4 @@
-<div class="counter-app">
+<!-- <div class="counter-app">
   <h1>Counter App</h1>
   <h3 class="count">{{ count }}</h3>
   <div>
@@ -6,4 +6,27 @@
     <button class="btn black" (click)="counterFunction('reset')">Reset</button>
     <button class="btn green" (click)="counterFunction('plus')">Increase</button>
   </div>
-</div>
+</div> -->
+
+<!-- <div class="input-app">
+  <h1 class="title">Getting and Setting Input Values</h1>
+  <h2 class="username"> {{ username }}</h2>
+  <input value="{{ username }}" (input)="getUserName($event)" type="text" placeholder="Enter Username" #UsernameInput />
+  <br><br>
+  <button class="btn" (click)="setUserName()">Set User Name</button>
+  <button class="btn" (click)="getUserNameField(UsernameInput.value)">Get User Name</button>
+</div> -->
+
+
+<button (click)="hide()">Hide</button>
+<button (click)="show()">Show</button>
+<button (click)="toggleDisplay()"> {{ display ? 'Hide' : 'Show' }}</button>
+<button (click)="displayDiv()">Toggle Div</button>
+
+@if(displayOneDiv){
+  <div style="background-color: blue; width: 200px; height: 200px;"></div>
+}
+@else{  
+  <div style="background-color: green; width: 200px; height: 200px;"></div>
+}
+  

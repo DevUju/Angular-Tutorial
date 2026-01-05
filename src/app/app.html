@@ -61,3 +61,31 @@
 
 
 <!-- FOR LOOP -->
+<!-- @for(user of users; track user) {
+<h1>{{ user }}</h1>
+}
+
+<hr>
+
+@for(employee of employees; track employee.name; let id = $index){
+<h1>
+  <span> {{ id + 1 }}.</span>
+  <span> {{ employee.name }}</span>
+  <span> {{ employee.age }}</span>
+  <span> {{ employee.job }}</span>
+  <button class="btn" (click)="getEmployeeName(employee.name)">Get Employee's Name</button>
+</h1>
+} -->
+
+<!-- TYPES OF EVENTS -->
+<button (click)="handleEvents($event)" class="btn">Click to get event details</button>
+
+<div style="background-color: blue; width: 200px; height: 200px;" (mouseenter)="handleEvents($event)"></div>
+
+<br><br>
+
+<div style="background-color: green; width: 200px; height: 200px;" (mouseleave)="handleEvents($event)"></div>
+
+<br><br>
+
+<input type="text" placeholder="Type something..." (input)="handleEvents($event)" (focus)="handleEvents($event)" (blur)="handleEvents($event)"/>

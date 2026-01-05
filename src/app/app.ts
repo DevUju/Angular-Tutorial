@@ -98,6 +98,22 @@ export class App {
 
 
 
+  // users = ["Uju", "Chidi", "Ifeoma", "Kelechi"]
 
-  
+  // employees = [
+  //   {name: "Obianuju", age: 25, job: "Developer"},
+  //   {name: "Chukwuemeka", age: 30, job: "Designer"},
+  //   {name: "Amaka", age: 28, job: "Manager"},
+  //   {name: "Ikenna", age: 35, job: "Tester"}
+  // ]
+
+  // getEmployeeName(val:string) {
+  //   console.log(val)
+  // }
+
+
+
+  handleEvents(event: Event) {
+    console.log('Event handled at the component level :', event.type);
+  }
 }

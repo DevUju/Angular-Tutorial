@@ -9,70 +9,95 @@ import { Component, signal } from '@angular/core';
 export class App {
   protected readonly title = signal('counter-app');
 
-//   count:number = 0
+  //   count:number = 0
 
-//   increase (){
-//     this.count = this.count + 1
-//   }
+  //   increase (){
+  //     this.count = this.count + 1
+  //   }
 
-//   decrease (){
-//     if (this.count === 0) {
-//       this.count = 0
-//     } else {
-//     this.count = this.count - 1
-//     }
-//   }
+  //   decrease (){
+  //     if (this.count === 0) {
+  //       this.count = 0
+  //     } else {
+  //     this.count = this.count - 1
+  //     }
+  //   }
 
-//   reset (){
-//     this.count = 0
-//   }
+  //   reset (){
+  //     this.count = 0
+  //   }
 
-//   counterFunction (val:string){
-//     if (val === 'plus'){
-//       this.count = this.count + 1
-//     } else if (val === 'minus'){
-//       if (this.count === 0) {
-//         this.count = 0
-//       } else {
-//       this.count = this.count - 1
-//       }
-//   } else if (val === 'reset'){
-//     this.count = 0
-//   }
-// }
+  //   counterFunction (val:string){
+  //     if (val === 'plus'){
+  //       this.count = this.count + 1
+  //     } else if (val === 'minus'){
+  //       if (this.count === 0) {
+  //         this.count = 0
+  //       } else {
+  //       this.count = this.count - 1
+  //       }
+  //   } else if (val === 'reset'){
+  //     this.count = 0
+  //   }
+  // }
 
-//   username:string = ''
 
-//   getUserName (event:Event) {
-//     this.username = (event.target as HTMLInputElement).value
-//     console.log(this.username)
-//   }
 
-//   setUserName () {
-//     this.username = "Obianuju"
-// }
 
-//   getUserNameField (val:string) {
-//     this.username = val
-//     console.log(this.username)
-// }
 
-  display = true
-  displayOneDiv = true
+  //   username:string = ''
 
-  hide(){
-    this.display = false
-  }
+  //   getUserName (event:Event) {
+  //     this.username = (event.target as HTMLInputElement).value
+  //     console.log(this.username)
+  //   }
 
-  show(){
-    this.display = true
-  }
+  //   setUserName () {
+  //     this.username = "Obianuju"
+  // }
 
-  toggleDisplay () {
-    this.display = !this.display
-  }
+  //   getUserNameField (val:string) {
+  //     this.username = val
+  //     console.log(this.username)
+  // }
 
-  displayDiv () {
-    this.displayOneDiv = !this.displayOneDiv
-  }
+
+
+
+  // display = true
+  // displayOneDiv = true
+
+  // hide(){
+  //   this.display = false
+  // }
+
+  // show(){
+  //   this.display = true
+  // }
+
+  // toggleDisplay () {
+  //   this.display = !this.display
+  // }
+
+  // displayDiv () {
+  //   this.displayOneDiv = !this.displayOneDiv
+  // }
+
+
+
+
+  // color = "orange"
+
+  // changeColour (val:string) {
+  //   this.color = val
+  // }
+
+  // getColour (event:Event) {
+  //   this.color = (event.target as HTMLInputElement).value.trim().toLowerCase()
+  // }
+
+
+
+
+  
 }

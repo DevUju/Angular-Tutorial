@@ -1,3 +1,4 @@
+<!-- Counter App -->
 <!-- <div class="counter-app">
   <h1>Counter App</h1>
   <h3 class="count">{{ count }}</h3>
@@ -8,6 +9,8 @@
   </div>
 </div> -->
 
+
+<!-- GETTING AND SETTING INPUT VALUES -->
 <!-- <div class="input-app">
   <h1 class="title">Getting and Setting Input Values</h1>
   <h2 class="username"> {{ username }}</h2>
@@ -18,7 +21,8 @@
 </div> -->
 
 
-<button (click)="hide()">Hide</button>
+<!-- Toggling Div Visibility -->
+<!-- <button (click)="hide()">Hide</button>
 <button (click)="show()">Show</button>
 <button (click)="toggleDisplay()"> {{ display ? 'Hide' : 'Show' }}</button>
 <button (click)="displayDiv()">Toggle Div</button>
@@ -28,5 +32,32 @@
 }
 @else{  
   <div style="background-color: green; width: 200px; height: 200px;"></div>
-}
-  
+} -->
+
+<!-- Switch Statement -->
+<!-- <button class="btn" (click) = "changeColour('red')">Red</button>
+<button class="btn" (click) = "changeColour('blue')">Blue</button>
+<button class="btn" (click) = "changeColour('green')">Green</button>
+<button class="btn" (click) = "changeColour('yellow')">Yellow</button>
+<input type="text" placeholder="Enter Color" (input)="getColour($event)">
+
+@switch(color){
+  @case("red"){
+    <h1 style="background-color: red;">Red Color</h1>
+  }
+  @case("blue"){
+    <h1 style="background-color: blue;">Blue Color</h1>
+  }
+  @case("green"){
+    <h1 style="background-color: green;">Green Color</h1>
+  }
+  @case("yellow"){
+    <h1 style="background-color: yellow;">Yellow Color</h1>
+  }
+  @default{
+    <h1 style="background-color: gray;">No Color Selected</h1>
+  }
+} -->
+
+
+<!-- FOR LOOP -->

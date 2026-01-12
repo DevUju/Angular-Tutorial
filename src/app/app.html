@@ -78,7 +78,7 @@
 } -->
 
 <!-- TYPES OF EVENTS -->
-<button (click)="handleEvents($event)" class="btn">Click to get event details</button>
+<!-- <button (click)="handleEvents($event)" class="btn">Click to get event details</button>
 
 <div style="background-color: blue; width: 200px; height: 200px;" (mouseenter)="handleEvents($event)"></div>
 
@@ -88,4 +88,15 @@
 
 <br><br>
 
-<input type="text" placeholder="Type something..." (input)="handleEvents($event)" (focus)="handleEvents($event)" (blur)="handleEvents($event)"/>
+<input type="text" placeholder="Type something..." (input)="handleEvents($event)" (focus)="handleEvents($event)" (blur)="handleEvents($event)"/> -->
+
+<!-- Signal -->
+ <h1>Two Way Binding</h1>
+ <!-- <h3>{{ name | reverse }}</h3> -->
+ <!-- <input type="text" placeholder="enter name" [(ngModel)]="name"/> -->
+   <input type="text" placeholder="enter name" (input)="updateName($event)"/>
+
+ <h3>{{ name }}</h3>
+
+ <!-- <button class="btn" (click)="updateCount()">Update Count</button> 
+  <button class="btn" (click)="updateX()">Update X</button>  -->

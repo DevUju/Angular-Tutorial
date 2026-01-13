@@ -11,12 +11,23 @@ import { FormsModule } from '@angular/forms';
 })
 export class App {
   protected readonly title = signal('counter-app');
-  name = "Angular";
+  
+  task = ""
+  taskList:{id: number, name: string, completed: boolean}[] = []
 
-  updateName(val:Event){
-    this.name = (val.target as HTMLInputElement).value;
-    
-    
+  addTask(){
+    this.taskList.push({id:this.taskList.length + 1, name:this.task, completed:false})
+    this.task = ""
+  }
+
+  taskCompleted(id:number){
+    const taskId = this.taskList.findIndex(task => task.id === id);
+    this.taskList[taskId].completed = !this.taskList[taskId].completed
+  }
+
+  deleteTask(id:number){
+    this.taskList = this.taskList.filter(task => task.id !== id);
+    this.taskList = this.taskList.map((task, index) => ({...task, id: index + 1}) );
   }
 }
 

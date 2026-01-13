@@ -1,102 +1,13 @@
-<!-- Counter App -->
-<!-- <div class="counter-app">
-  <h1>Counter App</h1>
-  <h3 class="count">{{ count }}</h3>
-  <div>
-    <button class="btn blue" (click)="counterFunction('minus')">Decrease</button>
-    <button class="btn black" (click)="counterFunction('reset')">Reset</button>
-    <button class="btn green" (click)="counterFunction('plus')">Increase</button>
-  </div>
-</div> -->
+<h1>ToDo List</h1>
 
+<input type="text" placeholder="enter task" [(ngModel)]="task">
+<button class="btn" (click)="addTask()">Add Task</button>
 
-<!-- GETTING AND SETTING INPUT VALUES -->
-<!-- <div class="input-app">
-  <h1 class="title">Getting and Setting Input Values</h1>
-  <h2 class="username"> {{ username }}</h2>
-  <input value="{{ username }}" (input)="getUserName($event)" type="text" placeholder="Enter Username" #UsernameInput />
-  <br><br>
-  <button class="btn" (click)="setUserName()">Set User Name</button>
-  <button class="btn" (click)="getUserNameField(UsernameInput.value)">Get User Name</button>
-</div> -->
-
-
-<!-- Toggling Div Visibility -->
-<!-- <button (click)="hide()">Hide</button>
-<button (click)="show()">Show</button>
-<button (click)="toggleDisplay()"> {{ display ? 'Hide' : 'Show' }}</button>
-<button (click)="displayDiv()">Toggle Div</button>
-
-@if(displayOneDiv){
-  <div style="background-color: blue; width: 200px; height: 200px;"></div>
+@for (task of taskList; track task.id){
+  <ul class="task-item">
+    <li>{{task.id}}</li>
+    <li>{{task.name}}</li>
+    <li><button class="btn" style="color: whitesmoke; background-color: red;" (click)="taskCompleted(task.id)">{{task.completed }}</button></li>
+    <button class="btn" style="background-color: grey; color: white;" (click)="deleteTask(task.id)">Delete</button>
+  </ul>
 }
-@else{  
-  <div style="background-color: green; width: 200px; height: 200px;"></div>
-} -->
-
-<!-- Switch Statement -->
-<!-- <button class="btn" (click) = "changeColour('red')">Red</button>
-<button class="btn" (click) = "changeColour('blue')">Blue</button>
-<button class="btn" (click) = "changeColour('green')">Green</button>
-<button class="btn" (click) = "changeColour('yellow')">Yellow</button>
-<input type="text" placeholder="Enter Color" (input)="getColour($event)">
-
-@switch(color){
-  @case("red"){
-    <h1 style="background-color: red;">Red Color</h1>
-  }
-  @case("blue"){
-    <h1 style="background-color: blue;">Blue Color</h1>
-  }
-  @case("green"){
-    <h1 style="background-color: green;">Green Color</h1>
-  }
-  @case("yellow"){
-    <h1 style="background-color: yellow;">Yellow Color</h1>
-  }
-  @default{
-    <h1 style="background-color: gray;">No Color Selected</h1>
-  }
-} -->
-
-
-<!-- FOR LOOP -->
-<!-- @for(user of users; track user) {
-<h1>{{ user }}</h1>
-}
-
-<hr>
-
-@for(employee of employees; track employee.name; let id = $index){
-<h1>
-  <span> {{ id + 1 }}.</span>
-  <span> {{ employee.name }}</span>
-  <span> {{ employee.age }}</span>
-  <span> {{ employee.job }}</span>
-  <button class="btn" (click)="getEmployeeName(employee.name)">Get Employee's Name</button>
-</h1>
-} -->
-
-<!-- TYPES OF EVENTS -->
-<!-- <button (click)="handleEvents($event)" class="btn">Click to get event details</button>
-
-<div style="background-color: blue; width: 200px; height: 200px;" (mouseenter)="handleEvents($event)"></div>
-
-<br><br>
-
-<div style="background-color: green; width: 200px; height: 200px;" (mouseleave)="handleEvents($event)"></div>
-
-<br><br>
-
-<input type="text" placeholder="Type something..." (input)="handleEvents($event)" (focus)="handleEvents($event)" (blur)="handleEvents($event)"/> -->
-
-<!-- Signal -->
- <h1>Two Way Binding</h1>
- <!-- <h3>{{ name | reverse }}</h3> -->
- <!-- <input type="text" placeholder="enter name" [(ngModel)]="name"/> -->
-   <input type="text" placeholder="enter name" (input)="updateName($event)"/>
-
- <h3>{{ name }}</h3>
-
- <!-- <button class="btn" (click)="updateCount()">Update Count</button> 
-  <button class="btn" (click)="updateX()">Update X</button>  -->

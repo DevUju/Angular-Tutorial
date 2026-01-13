@@ -63,6 +63,7 @@ input {
     padding: 12px 14px;
     font-size: 20px;
     width: 300px;
+    margin-right: 10px;
 }
 
 .btn {
@@ -87,3 +88,12 @@ input {
     color: darkgreen;
     margin-bottom: 20px;
 }
+
+.task-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 30px;
+}
+
